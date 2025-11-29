@@ -1,0 +1,11 @@
+#!/bin/bash
+
+a=${1%.ly}
+
+lilypond "$a.ly"
+if [[ -f "$a.pdf" ]]
+then
+    pdfcrop "$a.pdf"
+    rm "$a.pdf"
+    mv "$a-crop.pdf" "$a.pdf"
+fi;
