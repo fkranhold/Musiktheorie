@@ -1,0 +1,113 @@
+%% Serifen in Überschriften
+\KOMAoptions{paper=b5,numbers=enddot,DIV=11,headings=standardclasses}
+
+%% Encoding
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+%% Sprache
+\usepackage{babel}
+\usepackage[cleanlook]{isodate}
+
+%% Schriftpakete
+\usepackage{lmodern}
+\usepackage[osf,sc]{mathpazo}
+\usepackage{classico}
+\usepackage[scaled=.85]{beramono}
+
+%% Palatino braucht mehr Platz
+\usepackage{setspace}
+\setstretch{1.07}
+\renewcommand{\arraystretch}{1.07} % Für tabular- und array-Umgebungen
+
+%% Mikrotypographie!
+\usepackage{ellipsis}
+\usepackage[babel,tracking=true]{microtype}
+\UseMicrotypeSet[tracking]{smallcaps}
+\SetTracking{encoding=*,shape=sc}{30}
+
+%% Akronyme
+\newcommand{\acr}[1]{\textls[40]{\textsc{\MakeLowercase{#1}}}}
+
+%% Eigene Listing styles mit kurzer Definition
+\usepackage[shortlabels]{enumitem}
+
+%% Captions for figures and tables
+\setkomafont{captionlabel}{\footnotesize\bfseries}
+\setkomafont{caption}     {\footnotesize}
+\setcapwidth{.9\textwidth}
+\renewcommand*{\captionformat}{.\ }
+\setcapindent{0em}
+\addtokomafont{caption}{\setstretch{1.07}}
+
+%% Fancy tables
+\usepackage{booktabs}
+
+%% Mehrspaltinge Aufzählungen
+\usepackage{multicol}
+
+%% Bibliographie
+\usepackage{biblatex}
+\bibliography{bibliography.bib}
+
+%% Footnote-Design
+\deffootnote{0em}{0em}{\thefootnotemark.\ }
+
+%% Todo
+\usepackage[size=tiny]{todonotes}
+
+%% Grundlegende mathematische Symbole
+\usepackage{amssymb,amsmath} % Standard
+\usepackage{mathtools}       % \coloneqq, \eqqcolon
+
+%% TikZ and TikZ-CD
+\usepackage{tikz-cd}
+\usepackage{tikz}
+\usetikzlibrary{arrows,calc}
+
+%% Mini-Indizes (\scaleto{…}{3pt})
+\usepackage{scalerel}
+
+%% Bold
+\newcommand{\bm} [1]{\mathbold{#1}}
+
+%% TikZ: centerarc
+ \def\centerarc[#1](#2)(#3:#4:#5)% Syntax: [draw options] (center) (initial angle:final angle:radius)
+     { \draw[#1] ($(#2)+({#5*cos(#3)},{#5*sin(#3)})$) arc (#3:#4:#5); }
+
+%% Musikalische Symbole
+\usepackage{musicography}
+
+%% Vorzeichen
+\newcommand{\dflat}{{\flat\!\flat}}
+\newcommand{\dsharp}{{\smash{\raisebox{-.6px}{$\scaleto{\musDoubleSharp}{6.5pt}$}}}}
+
+%% Harmonische Funktionen
+\newcommand{\mut}         {\text{t}}
+\newcommand{\mus}         {\text{s}}
+\newcommand{\mud}         {\text{d}}
+\newcommand{\muT}         {\text{T}}
+\newcommand{\muS}         {\text{S}}
+\newcommand{\muD}         {\text{D}}
+\newcommand{\mup}         {\text{p}}
+\newcommand{\muP}         {\text{P}}
+\newcommand{\mug}         {\text{g}}
+\newcommand{\muG}         {\text{G}}
+\newcommand{\muDD}        {\mbox{\muD\hspace{-5.5px}\raisebox{1.3px}{\muD}}}
+\newcommand{\muDDZ}       {\mbox{\muD\hspace{-6.1px}\raisebox{1.3px}{\muD}}}
+\newcommand{\muSS}        {\raisebox{1.5px}{\muS}\hspace{-4px}\muS}
+\newcommand{\muss}        {\raisebox{1.5px}{\mus}\hspace{-3px}\mus}
+\newcommand{\musDD}       {\muD\hspace{-6px}\raisebox{2px}{\sout{\muD}}}
+\newcommand{\vermsept}    {\hspace{1mm}\raisebox{4px}{\mus}\hspace{-3px}\muD}
+\newcommand{\sevsept}     {\hspace{1mm}\raisebox{3px}{\muS}\hspace{-5px}\muD}
+\newcommand{\dvermsept}   {\hspace{1mm}\raisebox{4px}{\mut}\hspace{-1px}\muD\hspace{-6px}\raisebox{2px}{\muD}}
+
+%% Hyperref and Cleveref
+\usepackage{amsthm}
+\usepackage[pdfusetitle,bookmarksnumbered=true]{hyperref}
+\usepackage[noabbrev]{cleveref}
+
+%% Aufgaben
+\theoremstyle{definition}
+\newtheorem{aufg}{Aufgabe}[section]
+
