@@ -16,12 +16,14 @@
   <<
     \new Staff \with { \omit TimeSignature } <<
       \relative c'' {
+        \key d \major
         \time 4/4
         s1
       }
     >>
     \new Staff \with { \omit TimeSignature } <<
       \relative c' {
+        \key d \major
         \clef "bass"
         \time 4/4
         s1

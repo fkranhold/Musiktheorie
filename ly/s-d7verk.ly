@@ -15,12 +15,12 @@
           {
             \voiceOne
             \set fingeringOrientations = #'(right)
-            <b-3>2 \glissando <c-1> \bar "||" <gis-3>\glissando <a-1>\bar "|."
+            <b-3>2 \glissando <c-1> \bar "||" <c-7>\glissando <bes-3>\bar "|."
           }
           \new Voice {
             \voiceTwo
             \set fingeringOrientations = #'(right)
-            <f-7>2 \glissando <e-3> <d-7>\glissando <c-3>
+            <f-7>2 \glissando <e-3> \key g \minor <fis-3>\glissando <g-1>
           }
         >> 
       }
@@ -31,12 +31,12 @@
           {
             \voiceOne
             \set fingeringOrientations = #'(right)
-            <d-5>2 <e-3> <b-5> <c-3>
+            <d-5>2 <e-3> \key g \minor <a,-5> <g-1>
           }
           \new Voice {
             \voiceTwo
             \set fingeringOrientations = #'(right)
-            <d,-5>2\glissando <c-1> <b-5>\glissando <a-1>
+            <d-5>2\glissando <c-1> <a-5>\glissando <bes-3>
           }
         >> 
       }

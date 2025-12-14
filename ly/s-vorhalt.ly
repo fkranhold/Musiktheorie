@@ -16,7 +16,7 @@
           {
             \voiceOne
             \set fingeringOrientations = #'(right)
-            b2 c \bar "||" a2~ <a-6>4 <g-5> \bar "||" c2~ <c-4>4 <b-3>  \bar "||" b2~ <b-4>4 <a-3> \bar "||" gis2 a2  \bar "||" c b \bar "|."
+            b2 c \bar "||" a2~ <a-6>4 <g-5> \bar "||" c2~ <c-4>4 <b-3>  \bar "||" b2~ <b-4>4 <a-3> \bar "||" gis2 a2  \bar "||" c b  \bar "|."
           }
           \new Voice {
             \voiceTwo

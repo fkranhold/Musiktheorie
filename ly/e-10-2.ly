@@ -22,7 +22,7 @@
       \key es \major \relative c' {
         \clef "bass"
         \time 4/4
-        \voiceTwo es,4 c f d g es as f bes g c as des bes es2
+        \voiceTwo es,4 c f d g es as f bes g c as f bes es,2
       }
     >>
   >>

@@ -10,7 +10,7 @@
           {
             \voiceOne
             \set fingeringOrientations = #'(right)
-            \partial 8 {fis8} g g g f es es es e f f f es d d d d es es es d cis cis cis e f f f 
+            \partial 8 {fis8} g g g f? es es es e f f f es d d d d es es es d cis cis cis e f f f 
           }
           \new Voice {
             \voiceTwo

@@ -51,7 +51,8 @@
 \bibliography{bibliography.bib}
 
 %% Footnote-Design
-\deffootnote{0em}{0em}{\thefootnotemark.\ }
+\deffootnote{1.5em}{1.5em}{\thefootnotemark.\ }
+\addtokomafont{footnote}{\setstretch{1.07}}
 
 %% Todo
 \usepackage[size=tiny]{todonotes}
@@ -77,10 +78,6 @@
 
 %% Musikalische Symbole
 \usepackage{musicography}
-
-%% Vorzeichen
-\newcommand{\dflat}{{\flat\!\flat}}
-\newcommand{\dsharp}{{\smash{\raisebox{-.6px}{$\scaleto{\musDoubleSharp}{6.5pt}$}}}}
 
 %% Harmonische Funktionen
 \newcommand{\mut}         {\text{t}}
@@ -111,3 +108,6 @@
 \theoremstyle{definition}
 \newtheorem{aufg}{Aufgabe}[section]
 
+%\usepackage[dvipsnames]{xcolor}
+%\newcommand{\rb}[1]{\textcolor{Maroon}{#1}}
+\newcommand{\rb}[1]{#1}
