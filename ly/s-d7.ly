@@ -15,7 +15,7 @@
           {
             \voiceOne
             \set fingeringOrientations = #'(right)
-            c4 <b-3> \glissando <c-1>2 \bar "||" \key bes \major bes4 bes <a-3>\glissando <bes-1> \bar "||" \key as \major as4 as <g-3> \glissando <as-1> \bar "||" \key a \minor a a <gis-3>\glissando <a-1> \bar "|."
+            c4 <b-3> \glissando <c-1>2 \bar "||" \key bes \major bes4 bes <a-3>\glissando <bes-1> \bar "||" \key as \major as4 as bes as \bar "||" \key a \minor a a <gis-3>\glissando <a-1> \bar "|."
           }
           \new Voice {
             \voiceTwo
@@ -31,7 +31,7 @@
           {
             \voiceOne
             \set fingeringOrientations = #'(right)
-            a4 g g2 \bar "||" \key bes \major f4 g c <d-3> \bar "||" \key as \major es, f bes as \bar "||" \key a \minor c d8 c b4 a
+            a4 g g2 \bar "||" \key bes \major f4 g c <d-3> \bar "||" \key as \major es, f <g-3> \glissando <as-1> \bar "||" \key a \minor c d8 c b4 a
           }
           \new Voice {
             \voiceTwo

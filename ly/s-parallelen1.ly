@@ -13,8 +13,8 @@
       \time 2/2
       \override Staff.TimeSignature.stencil = ##f
       <<
-        {\voiceOne e'4 d\glissando c2 \bar "||" c4 b\glissando c2 \bar "||" d4 c b2 \bar "||" d g \bar "||" f g \bar "||" c, d}
-        \new Voice {\voiceTwo  g,\glissando f e2\glissando f g e g c, bes c fis g}
+        {\voiceOne c'4 b\glissando c2 \bar "||" d4 c b2 \bar "||" d g \bar "||" c, d}
+        \new Voice {\voiceTwo  e,2\glissando f g e g c, fis g}
       >>
     }
   >>

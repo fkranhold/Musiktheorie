@@ -15,7 +15,7 @@
         <<
           {
             \voiceOne
-            bes2 g4.( as8) bes2 es, f8( g as bes as4) g f1 \bar "|."
+            bes2 g4.( as8) bes2 es, f8( g as bes as4) g f1
           }
           \new Voice {
             \voiceTwo
