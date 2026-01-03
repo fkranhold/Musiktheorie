@@ -20,7 +20,7 @@
           }
           \new Voice {
             \voiceTwo
-            d,4 g8 f es4 d g f f es8 d es4 d es es d2.
+            d,4 g8 f es4 d g f f es8 d es4 d g es d2.
           }
         >> 
       }

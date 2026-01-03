@@ -3,23 +3,30 @@
 
 \begin{document}
 
-\subject {CdE-WinterAkademie 2025\,·\,26}
+%\subject {CdE-WinterAkademie 2025\,·\,26}
 \author  {Florian Kranhold\and Charlotte Mertz}
 \title   {Musiktheorie}
-\subtitle{Skript}
+\subtitle{Skript, Version 4.1}
 \hypersetup{pdftitle={Musiktheorie: Skript}}
+
+% Wenn Marginalien verschwinden sollen:
+\renewcommand{\marginpar}[1]{}
 
 \maketitle
 
-Dieses Skript umfasst die Themen des geplanten Musiktheoriekurses auf der ersten
-Hälfte der CdE-WinterAkademie 2025\,·\,26, in dem die theoretischen Grundlagen
-mehrstimmiger klassischer Musik besprochen werden.  Die Konzepte werden zumeist
-am Beispiel vierstimmiger Chorsätze erläutert, sind aber leicht auf andere
-Satzformen übertragbar.
+Dieses Skript entstand im Zuge mehrerer Musiktheorie-Kurse, die wir auf
+CdE-Akademien geleitet haben (zuletzt auf der CdE-WinterAkademie 2025\,·\,26 in
+Windischleuba). Es behandelt die theoretischen Grundlagen mehrstimmiger
+klassischer Musik, wobei die Konzepte zumeist am Beispiel vierstimmiger
+Chorsätze im Stile Bachs erläutert werden.
 
 Unsere Aufbereitung der Thematik orientiert sich größtenteils an dem
 Standardwerk von Diether de la Motte \cite{deLaMotte}, das wir den an einer
 detaillierteren Abhandlung interessierten Leser:innen ans Herz legen möchten.
+
+Wir danken Thomas Drögemüller für zahlreiche Anmerkungen und Korrekturen, durch
+die das Skript deutlich an Präzision gewonnen hat, sowie Maria Ravvina für
+diverse erhellende Diskussionen über Satzregeln.
 
 \section{Töne und Noten}
 
@@ -437,7 +444,7 @@ Präzisierung erfolgt in drei Schritten:
 entsprechende Zahl abkürzt (also z.\,B. \rb{5} für »Quinte«) und ihr dann je
 nach exakter Größe die Buchstaben \rb{r}, \rb{g}, \rb{k}, \rb{ü} oder \rb{v}
 voranstellt.  Beispielsweise bezeichnet \rb{g2} eine große Sekunde.
-So ergibt sich \cref{tab:ints}.
+So ergibt sich \cref{tab:ints}.\marginpar{2.1–2}
 
 \begin{table}[h]
   \centering
@@ -500,11 +507,11 @@ c’\,:\,as’ (kleine Sexte) zusammensetzen.
 \noindent Zwei Intervalle heißen zueinander \emph{komplementär}, wenn sie
 gemeinsam eine Oktave zusammensetzen. So sind zum Beispiel die große Sekunde
 (g2) und die kleine Septime (k7) zueinander komplementär. Man sagt dann auch, g2
-ist das \emph{Komplementärintervall} der k7 (und umgekehrt).
+ist das \emph{Komplementärintervall} der k7 (und umgekehrt).\marginpar{2.3}
 
 \subsection{Größere Intervalle}
 
-Um ein Intervall wie c’\,:\,des” zu benennen, geht man wie folgt vor: Wir zählen
+Um ein großes Intervall wie c’\,:\,des” zu benennen, geht man wie folgt vor: Wir zählen
 weiter und landen bei dem Begriff »None«. Nun nutzen wir, dass sich dieses
 Intervall aus einer Oktave (c’\,:\,c”) und einer Sekunde (c”\,:\,des”)
 zusammensetzt. Wir vergessen die Oktave, kopieren die Größenbezeichnung der
@@ -526,7 +533,7 @@ Sekunde (»klein«) und nennen das Intervall somit »kleine None« (k9).
   übermäßige Quarte.  Damit fasst er sechs Halbtonschritte, was klingend eine
   »halbe Oktave« ist (aber ziemlich schräg klingt).  Sein Komplementärintervall,
   die verminderte Quinte, hat genauso viele Halbtonschritte und wird daher auch
-  oft als Tritonus bezeichnet.
+  oft als Tritonus bezeichnet.\marginpar{2.4}
 \end{enumerate}
 
 \subsection{Intervalle hören}
@@ -548,7 +555,7 @@ Halbtonschritten wahrnehmen. Wollen wir also zur Übung Intervalle hören, so
 machen wir uns den Umstand zunutze, dass das Spektrum von 0 bis 12\,\acr{HTS}
 bis auf den Tritonus eindeutig durch reine, kleine und große Intervalle
 abgedeckt ist, und verwenden nur die in \cref{tab:inthoer} dargestellten
-Begriffe.\looseness-1
+Begriffe.\marginpar{Hören}\looseness-1
 
 \section{Skalen, Tonarten und der Quintenzirkel}
 \label{sec:Tonart}
@@ -642,13 +649,13 @@ gehören und welche Töne Ausnahmen sind? Was hat uns das Studium von Skalen
 genutzt, wenn doch in einem Stück mehrere vorkommen?
 
 Der entscheidende Punkt ist, dass in der klassischen Musik Stücke üblicherweise
-ein klar erkennbares »Zentrum« haben, d.\,h. einen Ton, der über weite Strecken
+ein klar erkennbares »Zentrum« haben, also einen Ton, der über weite Strecken
 als Bezugspunkt wahrgenommen wird, auch \emph{Grundton} genannt. In
 \cref{fig:mozart} ist es das c. Der »Standardvorrat« an Tönen ergibt sich nun
 aus einer heptatonischen Skala, die auf dem Grundton aufbaut. Im Prinzip käme
 hier jeder Modus in Frage, seit dem Frühbarock kommen aber Dur und Moll
 unverhältnismäßig häufiger vor, sodass wir uns hierauf konzentrieren können.
-Die Kombination aus Grundton und Tongeschlecht (also Dur oder Moll) konstituiert
+Die Kombination aus Grundton und Modus (also Dur oder Moll) konstituiert
 dann die \emph{Tonart} des Stücks. Im Fall von Dur notieren wir den Grundton
 kapitalisiert, im Fall von Moll vollständig mit Kleinbuchstaben, also »Fis-Dur«,
 aber »fis-Moll«. So steht das Beispiel aus \cref{fig:mozart} in C-Dur.
@@ -661,7 +668,8 @@ das f. Deswegen bietet es sich an, das fis als Generalvorzeichen wie in
 \cref{Vorzeichen} zu notieren, um Tinte zu sparen. Zudem bringt diese
 Vorgehensweise Hörempfinden und Notation noch näher zusammen, denn so sind die
 überraschenden Ausnahmetöne genau diejenigen, die ein singuläres Vorzeichen
-erhalten (z.\,B. ein f, das ein Auflösungszeichen braucht).\looseness-1
+erhalten (z.\,B. ein f, das ein Auflösungszeichen
+braucht).\looseness-1\marginpar{3.1}
 
 Zwei Tonarten heißen zueinander \emph{parallel}, wenn sie dieselben
 Generalvorzeichen haben. Auf diese Weise werden Paare gebildet, die immer aus
@@ -675,7 +683,7 @@ Umgekehrt heißt das: Wenn man von einem Stück die Tonart bestimmen möchte,
 lassen die Generalvorzeichen noch zwei Möglichkeiten zu. Es muss also noch der
 Grundton gefunden werden. Ein guter Anhaltspunkt ist der Schlusston, denn am
 Ende will man eigentlich zum Zentrum zurückgekehrt sein.  Ein Glück, dass
-Mozarts Sonate nicht schon nach 7 Takten zuende ist!
+Mozarts Sonate nicht schon nach 7 Takten zuende ist!\marginpar{3.2–3}
 
 \subsection{Quintenzirkel}
 
@@ -705,7 +713,7 @@ zueinander parallel sind).
 
 So lassen sich nun die Generalvorzeichen einer Tonart leicht ablesen: Um
 beispielsweise von C-Dur zu E-Dur zu gelangen, muss ich unterwegs fis, cis, gis
-und dis als Generalvorzeichen mitnehmen.
+und dis als Generalvorzeichen mitnehmen.\marginpar{3.4}
 
 \begin{figure}[h]
   \centering
@@ -802,7 +810,7 @@ naheliegenden Gründen auch \emph{terzverwandt}. Terzverwandte Dreiklänge kling
 einander näher als Variantdreiklänge, obwohl sich bei letzteren der Grundton
 nicht ändert. Dies liegt daran, dass die Töne terzverwandter Dreiklänge in einer
 gemeinsamen heptatonischen Skala vorkommen können, was bei Variantklängen nicht
-möglich ist.
+möglich ist.\marginpar{Netz}
 
 \subsection{Stufen und Funktionen in Dur}
 \label{subsec:SFDur}
@@ -909,23 +917,23 @@ Durakkord verändert. Es ergeben sich die in \cref{fig:SMoll} dargestellten Drei
 \begin{figure}[h]
   \centering
   \includegraphics{ly/s-stufen-moll}\\[-2px]
-  \textsc{\hspace*{12.5px}%
-    i\hspace{26.5px}%
-    ii\hspace{23.0px}%
-    iii\hspace{20.9px}%
-    iv\hspace{25.0px}%
-    v\hspace{24.6px}%
-    vi\hspace{23.1px}%
-    vii\hspace{1px}%
+  \textsc{\hspace*{12.1px}%
+    i\hspace{26.6px}%
+    ii\hspace{22.7px}%
+    iii\hspace{21.5px}%
+    iv\hspace{24.3px}%
+    v\hspace{24.3px}%
+    vi\hspace{23.8px}%
+    vii\hspace*{.5px}\hspace{1px}%
   }\par{}\small
-  \hspace*{12.6px}
-    t\hspace{23.9px}%
-    ~\hspace{31.9px}%
-    tP\hspace{25.0px}%
-    s\hspace{28.0px}%
-    D\hspace{24.9px}%
-    sP\hspace{23.3px}%
-    dP\hspace{3.5px}\hspace{1px}%
+  \hspace*{12.1px}
+    t\hspace{24.4px}%
+    ~\hspace{31.3px}%
+    tP\hspace{25.8px}%
+    s\hspace{27.1px}%
+    D\hspace{23.9px}%
+    sP\hspace{24.6px}%
+    dP\hspace{3.9px}\hspace{1px}%
   \caption{Die sieben Stufen in Moll und ihre Funktionsbezeichnungen.}\label{fig:SMoll}
 \end{figure}
 
@@ -966,7 +974,7 @@ vorkommt, siehe \cref{fig:wo}. Dabei gilt als grobe Regel:\looseness-1
   \centering
   \includegraphics{ly/s-wo}
   \caption{Die Takte 143–148 aus dem Eingangschor der 1. Kantate des
-    Weihnachtsoratoriums von Bach (\acr{BWV\,248}). Das Stück ist eigentlich in
+    Weihnachtsoratoriums von Bach (\acr{BWV\,248}). Das Stück steht eigentlich in
     D-Dur, den abgebildeten Ausschnitt können wir aber auch im Kontext von
     h-Moll interpretieren. Im 3. abgebildeten Takt tauchen Töne 6 und 7 in
     hochalterierter Form (gis und ais) auf, im 4. Takt tauchen die Töne 6 und 7 in ihrer
@@ -976,7 +984,7 @@ vorkommt, siehe \cref{fig:wo}. Dabei gilt als grobe Regel:\looseness-1
 \noindent Es gibt noch eine andere Möglichkeit, einen Hiatus zu vermeiden: Durch
 einen Wechsel der Oktave. Dabei wird der Hiatus zu einer verminderten Septime,
 die eingängiger ist (vermutlich weil sie gar nicht mehr den Anspruch
-erhebt, ein »Schritt« zu sein). Ein Beispiel findet sich in \cref{fig:singet}.
+erhebt, ein »Schritt« zu sein). Ein Beispiel findet sich in \cref{fig:singet}.\marginpar{4.4}
   
 \begin{figure}[h]
   \centering
@@ -1067,7 +1075,7 @@ Darüber hinaus könnte man einige Stufen auch als Gegenklänge anderer Stufen
 auffassen, zum Beispiel ist in Dur die Tonikaparallele (Tp) dasselbe wie der
 Subdominantgegenklang (Sg). In der Praxis ist das nur an einer Stelle relevant:
 Die sP in Moll ist oft ein »Ersatz« für die Tonika und wird daher auch als tG,
-also als \emph{Tonikagegenklang}, bezeichnet.
+also als \emph{Tonikagegenklang}, bezeichnet.\marginpar{4.1}
 
 % \pagebreak
 \subsection{Kadenzen}
@@ -1079,15 +1087,15 @@ gibt nun verschiedene Erweiterungen und Abwandlungen:
 \begin{itemize}
 \item Endet eine Kadenz nicht wie erwartet in der Tonika, spricht man von einem
   \emph{Trugschluss}. In der Melodie will man aber dennoch die Abfolge »Leitton
-  – Grundtton« hören, weswegen der »Ersatz« für die Tonika den Grundton
+  – Grundtton« hören, weswegen der »Ersatz« den Grundton
   enthalten sollte. Daher sind die üblichen Formen des Trugschlusses D\,–\,Tp in
-  Dur und D\,–\,tG in Moll.
+  Dur und D\,–\,tG in Moll; in Stufen beide Male \textsc{v}\,–\,\textsc{vi}.
 \item Oft taucht eine längere Version der Kadenz auf, die sich
   \emph{Vollkadenz} nennt und die Form T\,–\,S\,–\,D\,–\,T in Dur
   bzw. t\,–\,s\,–\,D\,–\,t in Moll hat.
 \item Zuweilen taucht auch die Schlussbildung S\,–\,T bzw. s\,–\,t auf, die
   \emph{plagale Kadenz} heißt. Sie klingt wie ein »Abstieg« zum
-  Ausgangspunkt.
+  Ausgangspunkt.\marginpar{4.2–3}
 \end{itemize}
 
 \section{Struktur von Notensätzen}
@@ -1131,7 +1139,7 @@ Liegenbleiben) und eine \emph{Größe}, bei der wir hier sehr grobgranular nur
 zwischen \emph{Schritt} (kleine oder große Sekunde) und \emph{Sprung} (größer)
 unterscheiden wollen.
 
-Diese Beschreibungen genügen, um die versprochenen »Faustregeln« für die
+Dieses Vokabular reicht aus, um die versprochenen »Faustregeln« für die
 Gestaltung von Melodien zu formulieren:
 \begin{itemize}[itemsep=2px]
 \item Kleine Bewegungen sind zu bevorzugen (»sparsame Stimmführung«): Also
@@ -1140,8 +1148,9 @@ Gestaltung von Melodien zu formulieren:
   größer als eine Quinte sind, sollten individuell geprüft werden.
 \item Große Sprünge sollten durch sich an sie anschließende Schritte in die andere
   Richtung »abgefedert« werden.
-\item Es sollte sich nur in reinen, kleinen und großen Intervallen bewegt
-  werden. Eine Ausnahme stellt die v7 wie in \cref{fig:singet} dar.
+\item Man sollte sich nur in reinen, kleinen und großen Intervallen
+  bewegen. Eine Ausnahme bildet der \emph{chromatische Halbtonschritt} ü1
+  (z.\,B.  c–cis).
 \end{itemize}
 
 \subsection{Chorsatz}
@@ -1157,7 +1166,7 @@ betrachten. Wie der Name vermuten lässt, sind hieran vier Gesangsstimmen
 beteiligt, deren vertikale Reihenfolge – bis auf wenige Ausnahmen, die wir
 \emph{Stimmkreuzung} nennen – gleich bleibt. Diese heißen (von hoch nach tief)
 \emph{Sopran}, \emph{Alt}, \emph{Tenor} und \emph{Bass}. Ihre Stimmumfänge (also
-die Bereich, in denen sie gut singen können) finden sich in
+die Bereiche, in denen sie gut singen können) finden sich in
 \cref{tab:Tonumfaenge}.
 
 \begin{table}[h]
@@ -1212,15 +1221,16 @@ den gleichen Rhythmus).  Folgende Regeln erledigen das Gröbste:
   \item Jeder der Dreiklangstöne kann gedoppelt werden, meistens wird aber der
     Grundton verdoppelt.
   \item Im Bass darf der Grundton oder die Terz stehen; die Quinte aber nur in
-    Ausnahmefällen. Was davon der Fall ist, wird als Index an die Funktion
+    Ausnahmefällen. Ist es nicht der Grundton, wird ein Index an die Funktion
     geschrieben, z.\,B. $\muT_3$ (»Tonika mit Terz im Bass«).
   \end{itemize}
 % \item Bei Regel 1 ist folgendes zu beachten: Grundton und Terz 
 \item Die vertikalen Abstände zwischen Sopran und Alt sowie zwischen Alt und
   Tenor sollten nicht größer als eine Oktave sein.
-\item Bei jedem Wechsel sollten wenigstens zwei der Bewegungsrichtungen
-  (Steigen, Fallen, Liegen) vorkommen. Zu vermeiden ist, dass sich alle
-  Stimmen in dieselbe Richtung bewegen (\emph{Satzrutsch}).\looseness-1
+\item Bei jedem Wechsel \emph{sollten} wenigstens zwei Bewegungsrichtungen
+  (Steigen, Fallen, Liegen) vorkommen, damit die einzelnen Melodien unabhängiger
+  klingen. Dies wird aber gerade bei Kadenzen oft
+  missachtet.\looseness-1\marginpar{5.1¹}
 % \item Bis auf noch zu erläuternde Ausnahmen ergeben die Stimmen einen Dreiklang
 %   innerhalb des harmonischen Rahmens der jeweiligen Tonart ist. Dabei darf die
 %   Quinte fehlen.
@@ -1247,7 +1257,7 @@ eine einzelne Quintparallele zwischen Alt und Tenor eingeschlichen.
 
 \begin{figure}[h]
   \centering
-  \includegraphics{ly/s-parall}
+  \includegraphics{ly/s-parallAT}
   \caption{Ein kurzer Chorsatz, an dem es wenig zu beanstanden gibt. Allerdings
     findet sich vom 3. zum 4. Schlag eine Quintparallele zwischen Alt und Tenor.}\label{fig:parall}
 \end{figure}
@@ -1259,58 +1269,60 @@ vermeiden sind. In Worten sehen wir hier folgendes:
 \item Parallelen, die durch zusätzliche Zwischennoten entstehen,
 \item Parallelen, die nur unwesentlich unterbrochen werden (\emph{Akzentparallele}),
 \item Parallelen, die bis auf Oktaven bestehen (\emph{Antiparallele}),
-\item Wechsel von v5 nach r5 (\emph{vermindert\,–\,rein}).
+\item Wechsel von v5 nach r5 (\emph{vermindert\,–\,rein: das lass sein}).
 \end{itemize}
-Dasselbe gilt für Oktavparallelen, mit einer Ausnahme: Oktavantiparallelen, bei
-denen sich die Stimmen (wie im vierten Beispiel von \cref{fig:QPb}) in
-verschiedene Richtungen bewegen, sind üblich.\looseness-1
 \begin{figure}[h]
   \centering
-  \includegraphics{ly/s-parallelen1}\vspace*{-10px}
+  \includegraphics{ly/s-parallBad}\vspace*{-10px}
   \caption{Quintparallelen, die nicht so leicht als solche erkannt
     werden.}\label{fig:QPb}
 \end{figure}%
+ Dasselbe gilt für Oktavparallelen, mit einer Ausnahme:
+\emph{Oktav}antiparallelen, bei denen sich die Stimmen wie in \cref{fig:QPb}:3
+in verschiedene Richtungen bewegen, sind üblich, siehe \cref{fig:QPg}:4.\looseness-1
 
+\pagebreak
 \noindent Interessanterweise sind einige andere Parallelbewegungen, die sehr
 ähnlich aussehen (siehe \cref{fig:QPg}), in der klassischen Musik durchaus
 häufig anzutreffen.  In Worten sehen wir hier folgendes:
 \begin{itemize}[nosep]
-\item Quartparallelen (also Quintparallelen bis auf »negative« Oktaven),
-\item Wechsel von r5 nach v5 (\emph{rein\,–\,vermindert}),
-\item Parallelen aus zeitversetzten Wechseln (hier: e”\,–\,d” kommt vor a’\,–\,g’).
+\item Quartparallelen (also »komplementäre« Quintparallelen),
+\item Wechsel von r5 nach v5 (\emph{rein\,–\,vermindert: ungehindert}),
+\item Parallelen aus zeitversetzten Wechseln (hier: e”\,–\,d” kommt vor a’\,–\,g’),
+\item Oktavantiparallelen wie zuvor erwähnt.
 \end{itemize}
 Zur Begründung, warum diese Fälle weniger problematisch sind, können wir
-leider kein besseres Argument als blanke Empirie anbieten.
+leider kein besseres Argument als blanke Empirie anbieten.\marginpar{5.1²}
 
 \begin{figure}[h]
   \centering
-  \includegraphics{ly/s-parallelen2}\vspace*{-5pt}
-  \caption{Unproblematische Quintparallelbewegungen.}\label{fig:QPg}
+  \includegraphics{ly/s-parallOk}\vspace*{-5pt}
+  \caption{Unproblematische Parallelbewegungen.}\label{fig:QPg}
 \end{figure}
 
 \subsection{Auflösung des Leittons}
 
-In jeder nicht-plagalen Kadenz enthält der vorletzte Akkord (also die Dur-Dominante)
-den Leitton der Tonart und der letzte Akkord den Grundton der Tonart (im Falle
-eines Trugschlusses ist er die Terz des Dreiklangs). Diejenige Einzelstimme, die
-den Leitton hat, möchte dann gerne auch den Grundton singen. Deshalb gilt die
-Stimmführungsregel: Der Leitton muss schrittweise aufwärts in den Grundtton der
-Tonart geführt werden.
+In jeder nicht-plagalen Kadenz enthält der vorletzte Akkord (also die
+Dur-Dominante) den Leitton und der letzte Akkord den Grundton der Tonart (im
+Falle eines Trugschlusses ist er die Terz des Dreiklangs). Dabei möchte jede
+Stimme, die den Leitton hat, gerne auch danach den Grundton singen.
 
-Würde man also in einer Kadenz den Leitton verdoppeln (was nach den bisherigen
-Regeln legitim wäre), würden bei Beachtung der Stimmführungsregel zwangsläufig
-Oktavparallelen entstehen.
+Würde man also in einer Kadenz den Leitton verdoppeln, so würden Oktavparallelen
+entstehen, wenn wir alle Stimmen zufriedenstellen. Deswegen darf der Leitton
+nicht verdoppelt werden – ohne Ausnahme.
 
-Von obiger Regel gibt es eine Ausnahme (die jedoch keine Leittonverdopplung
-rechtfertigt), unter der vor allem Mittelstimmen regelmäßig leiden: Der Grundton
-kann \emph{in gleicher Lage} von einer anderen Stimme über\-nommen werden, siehe
-\cref{fig:lat}. Dies heißt \emph{latente Auflösung}.
+\enlargethispage{.5\baselineskip}
+Liegt der Leitton in einer der Mittelstimmen, so ergibt sich bei seiner
+korrekten Auflösung oft ein unvollständiger Schlussakkord (z.\,B. ohne
+Quinte). Deshalb ist es üblich, in diesem Fall den Leitton in einen anderen Ton
+zu führen, siehe \cref{fig:leitton}:2–3; dies nennt sich \emph{abspringender
+  Leitton}. Eine Leittonverdopplung lässt sich dadurch allerdings nicht
+rechtfertigen.\marginpar{5.1³–\textsc{p}}
 
 \begin{figure}[h]
   \centering
-  \includegraphics{ly/s-latent}
-  ~\\[-46px]~~\hspace*{.5px}\rotatebox{45}{\rule{3.2mm}{.7px}}\vspace*{27px}
-  \caption{Eine latente Auflösung.}\label{fig:lat}
+  \includegraphics{ly/s-leitton}\vspace*{-4px}
+  \caption{Eine reguläre Leittonauflösung und zwei abspringende Leittöne.}\label{fig:leitton}
 \end{figure}
 
 \section{Harmoniefremde Töne}
@@ -1359,7 +1371,7 @@ Verwenden von Zwischennoten ein bisschen aufpassen:
   zueinander \emph{konsonant geführt} werden, d.\,h. sie müssen (bis auf
   Oktaven) eine Terz, Sexte oder Oktave bilden.
 \item Durch Zwischennoten können Quint- und Oktavparallelen entstehen, die nicht
-  leicht auffallen.  Hier sollte man besonders aufpassen.
+  leicht auffallen. Hier sollte man besonders aufpassen.\marginpar{6.2}
 \end{itemize}
 
 \subsection{Vorhalte}
@@ -1409,7 +1421,7 @@ Quartsextvorhalt.  Wieder gibt es ein paar Regeln:
   Nonvorhalt in Moll eine k2-Reibung zwischen der g9 und der k3 entsteht.
 \item %\textbf{Keine Vorwegnahme der Auflösung}\\
   Vorenthaltene Terzen und Quinten dürfen nicht bereits in einer anderen Stimme
-  erklingen. Vorenthaltene Oktaven sind unproblematisch.
+  erklingen. Vorenthaltene Oktaven sind unproblematisch.\marginpar{6.1+\textsc{p}}
 \end{itemize}
 
 \section{Sept- und Quintsextakkorde}
@@ -1426,29 +1438,29 @@ k7 bestehenden Tritonus wird die Strebetendenz zur Tonika und somit der
 dominantische Charakter verstärkt. Einige Regeln:
 
 \begin{itemize}
-\item Bei der Auflösung der Dominante muss die Septime schrittweise abwärts
-  geführt werden (also in die Terz der Tonika oder die Quinte des
-  Trugschlusses). Wie beim Leitton ist auch eine latente Auflösung der Septime
-  möglich, dennoch darf sie nicht verdoppelt werden.
-\item Terz (Leitton) und Septime müssen in diesem Akkord also genau einmal
-  vorkommen. Für die zwei übrigen Stimmen bleiben zwei Möglichkeiten: Grundton
-  und Quinte, oder zweimal Grundton.
+\item Bei der Auflösung muss die Septime schrittweise abwärts geführt werden
+  (also in die Terz der Tonika oder die Quinte des Trugschlusses). Wie beim
+  Leitton wird hiervon in den Mittelstimmen oft abgewichen (siehe
+  \cref{fig:d7}:3); dennoch wird die Septime nie verdoppelt.
+\item Terz und Septime müssen in diesem Akkord also genau einmal vorkommen. Da
+  wir (vorerst) nicht auf den Grundton verzichten wollen, bleiben für die
+  übrigen Stimmen bleiben zwei Möglichkeiten: Grundton und Quinte, oder zweimal
+  Grundton (siehe \cref{fig:d7}:2).
 \item Im Bass darf der Grundton, die Terz und sogar die Septime liegen.  Liegt
   die Septime im Bass und folgt die Tonika, so hat dieser Folgeakkord die Terz
-  im Bass, siehe Beispiel 3 von \cref{fig:d7}.
+  im Bass, siehe \cref{fig:d7}:4.
 \end{itemize}
 Durch die Septime kann ein Quartvorhalt der Tonika vorbereitet werden. Außerdem
 entspricht die Septime im $\muD^{\kern.4px 7}$ der Oktave der Subdominante,
 sodass bei der Verbindung $\muS$\,–\,$\muD^{\kern.4px 7}$ ein Ton liegen bleiben
-kann.
+kann, siehe \cref{fig:d7}:2.
 
 % Hier einige Beispiele, die die verschiedenen Möglichkeiten zeigen:
 \begin{figure}[h]
   \centering
-  \includegraphics{ly/s-d7}\\[-57.9px]\hspace*{-1.98cm}\rotatebox{-55}{\rule{3.5mm}{.7px}}~\\[32px]
+  \includegraphics{ly/s-d7}\vspace*{-4px}%\\[-57.9px]\hspace*{-1.98cm}\rotatebox{-55}{\rule{3.5mm}{.7px}}~\\[32px]
   \caption{Diverse Formen des Dominantseptakkords und seiner Auflösung. Im
-    letzten Beispiel kann das d im Alt auch als Durchgangsnote aufgefasst
-    werden.}\label{fig:d7}
+    letzten Beispiel sehen wir einen Trugschluss in Moll, der in den tG führt.}\label{fig:d7}
 \end{figure}
 
 \noindent Eine Variation des Dominantseptakkord erlaubt es, die Quinte in den
@@ -1480,20 +1492,18 @@ vor. Deshalb heißt der entstehende Klang \emph{Quintsextakkord}, kurz
 \smash{$\muS^{\kern.4px{}^6_5}$} bzw.\ \smash{$\mus^{\kern.4px{}^6_5}$}.  Üblich
 ist auch der französische Name \textit{sixte ajoutée} (»hinzugefügte Sexte«).
 
-Da die Sexte der Subdominante der Quinte der Dominante entspricht, wird die
-Umsetzung der Akkordfolge S\,–\,D erleichtert.  In Moll hat der
-Quintsextakkord einen Tritonus zwischen der k3 und der g6.  Einige
-Regeln:
+Da die Sexte der Subdominante der Quinte der Dominante entspricht, können bei der
+der Akkordfolge $\smash{\muS^{^6_5}}$\,–\,$\muD$ oder gar $\smash{\muS^{^6_5}}$\,–\,$\muD^7$
+noch mehr Töne liegen bleiben, siehe \cref{fig:s6}:3.  In Moll hat der
+Quintsextakkord einen Tritonus zwischen der k3 und der g6.  Einige Regeln:
 \begin{itemize}
-\item Wie schon erwähnt darf die Quinte nicht weggelassen werden
-  (andernfalls läge im Falle von Dur stattdessen die Sp vor).
-\item Im Bass darf der Grundton oder die Terz liegen, in Moll auch die
-  Sexte. Letzteres sollte in Dur vermieden werden, um eine Verwechslung
-  mit der Sp (mit hinzugefügter 7) auszuschließen.
+\item Wie schon erwähnt darf die Quinte nicht weggelassen werden.
+\item Im Bass darf der Grundton oder die Terz liegen, in Moll auch die Sexte
+  (siehe \cref{fig:s6}:2). Letzteres sollte in Dur vermieden werden, um eine
+  Verwechslung mit der Sp (mit hinzugefügter 7) auszuschließen.
 \item Die Quinte muss abwärts geführt werden, fast immer in die Terz der
-  Dominante (siehe \cref{fig:s6}).
+  Dominante, ggf. über einen Quartvorhalt (wie in \cref{fig:s6}:3).\marginpar{7.1–\textsc{p}}
 \end{itemize}
-
 
 \begin{figure}[h]
   \centering
@@ -1552,7 +1562,7 @@ bedeutet, dass die Dominante relativ zur Folgefunktion zu verstehen ist.%   Wir
 \item In Dur sind Zwischendominanten zu den Nebenfunktionen Sp bzw.\ Tp
   beliebt. Hierzu wird der Grundton bzw.\ die Quinte hochalteriert.
 \item Zwischendominantsept-Akkorde zur Subdominante sind reizvoll: In Dur ist
-  ihre Septime skalenfremd, in Moll ihre Terz.\vspace*{-5pt}
+  ihre Septime skalenfremd, in Moll ihre Terz.\marginpar{8.1–\textsc{p}}\vspace*{-5pt}
 \end{itemize}
 
 \begin{figure}[h]
@@ -1708,7 +1718,7 @@ $\smash{\muD^{\kern.3px{}^9_7}}$ oder
 \smash{\mbox{\raisebox{-.2px}{\rotatebox{40}{\rule{4mm}{.7px}}}\hspace*{-8.4px}$\smash{\muD^{\kern.3px{}^9_7}}$}}.
 
 Wieder kann jeder der Töne im Bass liegen. Die None und die Septime müssen
-schritt\-weise abwärts geführt werden, der Leitton aufwärts.\vspace*{-3px}
+schritt\-weise abwärts geführt werden, der Leitton aufwärts.\marginpar{9.1–\textsc{p}}\vspace*{-3px}
 
 \begin{figure}[h]
   \centering

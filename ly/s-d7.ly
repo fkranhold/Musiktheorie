@@ -5,9 +5,10 @@
   \context {
     \Score
     \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/11)
+    \remove "Time_signature_engraver"
   }
 }
-<<
+\score {
   \new ChoirStaff <<
     \new Staff <<
       \key c \major \relative c'' {
@@ -15,12 +16,12 @@
           {
             \voiceOne
             \set fingeringOrientations = #'(right)
-            c4 <b-3> \glissando <c-1>2 \bar "||" \key bes \major bes4 bes <a-3>\glissando <bes-1> \bar "||" \key as \major as4 as bes as \bar "||" \key a \minor a a <gis-3>\glissando <a-1> \bar "|."
+            \time 2/2 <b-3>2\glissando <c-1> \bar "||" \time 3/2 c2~ c4 <b-3> \glissando <c-1>2 \bar "||" <b-3>\glissando <c-1> <b-3>\glissando <c-1> \bar "||" b a \bar "|."
           }
           \new Voice {
             \voiceTwo
             \set fingeringOrientations = #'(right)
-            f <f-7>~ <f-4>4 <e-3> d4 es <es-7> f c des es es e f <e-8>8 <d-7> \glissando <c-3>4
+            <f-7>2\glissando <e-3> f2\glissando <f-7>~ <f-4>4 <e-3> <f-7>2\glissando <g-5> g g <gis-3>\glissando <a-1>
           }
         >> 
       }
@@ -31,15 +32,21 @@
           {
             \voiceOne
             \set fingeringOrientations = #'(right)
-            a4 g g2 \bar "||" \key bes \major f4 g c <d-3> \bar "||" \key as \major es, f <g-3> \glissando <as-1> \bar "||" \key a \minor c d8 c b4 a
+            d2 c a2 g g2 d' e d c <d-7>\glissando <c-5>
           }
           \new Voice {
             \voiceTwo
             \set fingeringOrientations = #'(right)
-            f4 g c,2 bes4 es f bes, as des <des-7>\glissando <c-3> a d e a,
+            g2 c, f2 g c,2 \time 2/2 g' c, <f-7>\glissando <e-3> e f
           }
         >> 
       }
     >>
-  >>
->>
+  >>  
+  \layout {
+    \context {
+      \Staff
+      \remove "Time_signature_engraver"
+    }
+  }
+}

@@ -1,6 +1,12 @@
 \version "2.24.4"
 \include "layout.ily"
 
+\layout {
+  \context {
+    \Score
+    \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/9)
+  }
+}
 \score {
   <<
     \new ChoirStaff <<
