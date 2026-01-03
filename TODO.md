@@ -1,11 +1,11 @@
-# Inhalt ergänzen
+## Inhalt ergänzen
 
 * Mal was zu Stimmvereinigungen schreiben und sagen, wie okay das ist.
 
 * Genaue Bedingungen wann die Terz eines Akkordes als Leitton gilt und
   dementsprechend aufgelöst werden muss / nicht verdoppelt werden darf.
   
-# Details
+## Details
   
 * Offensichtliche klingende Parallelen durch singuläre Stimmkreuzung zu
   umgehen ist nicht erlaubt.
@@ -17,6 +17,6 @@
   so. Von mir vermutete Regel: Wenn sich eine Stimme nicht bewegt ist sie nicht
   parallelfähig. Könnte man mal explizit schreiben.
 
-# Aufbau
+## Aufbau
 
 * §7 und §9 zu »Vierklänge« mergen, §9.2–3 entfernen.
